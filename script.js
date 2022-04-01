@@ -10,13 +10,17 @@ let url = "https://api.adviceslip.com/advice"
 
 let btnDice = document.querySelector(".space-dice__bg");
 let id = document.querySelector(".text__id");
-let advice = document.querySelector(".text__advice");
+let advice = document.querySelector(".text__advice-api");
 
 // # EVENT
 
 btnDice.addEventListener("click", randonAdvice);
 
 // # FUNCTION
+
+onload = function(){
+    randonAdvice();
+}
 
 function randonAdvice(){
     // console.log("teste");
